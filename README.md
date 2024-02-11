@@ -1,20 +1,44 @@
-# Student Management System
+# Factorial Calculator
 
-This is a simple command-line program written in C for managing student data. It allows users to add new student information, retrieve existing student information based on roll number, and exit the program.
+This is a simple C program that calculates the factorial of a given non-negative integer.
 
 ## Features
-- Add student data including name, roll number, contact details, email, parent's contact, and fees information.
-- Calculate remaining fees based on the stream chosen by the student and the amount of fees paid.
-- Retrieve student information by entering the roll number.
 
-## How to Use
-1. Compile the program using a C compiler.
-2. Run the compiled executable.
-3. Follow the prompts to add or retrieve student information.
+- Calculates the factorial of a number entered by the user.
+- Handles input validation for non-negative integers.
+- Allows the user to retry with a new input if desired.
 
-## File Structure
-- `main.c`: Contains the main program logic and function definitions.
-- `readme.md`: This file, providing an overview of the project.
+## Requirements
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+- C compiler (e.g., GCC, Clang)
+
+## Usage
+
+1. Clone the repository or download the source code.
+2. Compile the program using a C compiler. For example, using GCC:
+
+    ```bash
+    gcc factorial.c -o factorial
+    ```
+
+3. Run the compiled executable:
+
+    ```bash
+    ./factorial
+    ```
+
+4. Enter a non-negative integer when prompted.
+5. The program will output the factorial of the entered number.
+6. Optionally, you can choose to retry with a new input by entering `1` when prompted.
+
+## Example
+
+Enter a number to find factorial: 5
+Factorial of 5 is 120
+
+Do you want to retry? (Enter 1 for yes, 0 for no): 1
+Enter a number to find factorial: 8
+Factorial of 8 is 40320
+
+Do you want to retry? (Enter 1 for yes, 0 for no): 0
+Exiting program. Goodbye!
